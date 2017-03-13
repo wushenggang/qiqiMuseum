@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*页头*/
+body{background:url("../images/bjbj_2.png");}
+#header{
+    width:100%;height:auto;
+    background-color:#f3efd1;
+    border-bottom:7px solid #641C1A;
+}
+#header .header_top img{
+    display: block;
+    width:100%;
+    height:25px;
+}
+
+#header div.daohang{
+    margin:0 auto;
+    width:1200px;
+    height:100px;
+}
+#header div.daohang div.first{
+    width:222px;height:100px;line-height:100px;background:#631d19;font-size:22px;color:#fff;text-align: center;
+}
+#header div.daohang ul{
+    width:978px;
+    height:100px;
+}
+#header div.daohang ul li{
+    width:138px;
+    height:100px;line-height: 100px;
+    text-align: center;
+    border-right:1px solid #9d9a9b;
+}
+#header div.daohang ul a li{ text-decoration: none;color:#0f130f;font-size:22px;}
+#header div.daohang ul a li.active{background:url("../images/nav_b1.png");}
+#header div.daohang ul li:hover{
+    color:#641c1a;
+    background:url("../images/nav_b1.png");
+}

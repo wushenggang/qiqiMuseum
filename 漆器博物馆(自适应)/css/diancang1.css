@@ -1,0 +1,69 @@
+
+#slider, #slider div.sliderInner {
+    width:900px;height:500px;/* Must be the same size as the slider images */
+}
+
+#slider a.imgLink, #slider .video {
+	z-index:2;
+	position:absolute;
+	top:0px;left:0px;border:0;padding:0;margin:0; 
+}
+
+/* Caption styles */
+#slider div.mc-caption-bg, #slider div.mc-caption-bg2 {
+	position:absolute;
+	width:400px;
+	height:auto;
+	padding:10px 0;/* 10px will increase the height.*/
+	left:0px; /*if the caption needs to be aligned from right, specify by right instead of left. i.e. right:20px;*/
+	top:270px;/*if the caption needs to be aligned from bottom, specify by bottom instead of bottom. i.e. top:150px;*/
+	z-index:3;
+	overflow:hidden;
+	font-size: 0;
+}
+#slider div.mc-caption-bg {
+	/* NOTE: Its opacity, when background is not transparent, is to be set through the sliderOptions.captionOpacity setting in the js-image-slider.js file.*/
+	background:transparent;/* or any other colors such as White, or: background:none; */
+}
+#slider div.mc-caption {
+	font: normal 12px/16px Verdana;
+	color:#333;
+	z-index:4;
+	text-align:left;
+}
+#slider div.mc-caption a {
+	color:#09F;
+}
+#slider div.mc-caption a:hover {
+	color:#06C;
+}
+
+/* ------ built-in navigation bullets wrapper ------*/
+#slider div.navBulletsWrapper  {
+	display:none;
+}
+
+/* --------- Others ------- */
+
+#slider div.loading
+{
+	width:100%; height:100%;
+	filter: alpha(opacity=60);
+	opacity:0.6;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9;
+}
+
+#slider img, #slider>b, #slider a>b {
+	position:absolute; border:none; display:none;
+}
+
+#slider div.sliderInner {
+	overflow:hidden;
+	-webkit-transform: rotate(0.000001deg);/* fixed the Chrome not crop border-radius bug*/
+	position:absolute; top:0; left:0;
+}
+
+#slider>a, #slider video, #slider audio {display:none; display:inline-block; width:900px; height:500px; }

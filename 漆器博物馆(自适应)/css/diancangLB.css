@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------公共样式  begin-----------*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+p, h1, h2, h3, h4 {
+    cursor: default;
+}
+
+:focus {
+    outline: none;
+}
+
+h4, h3, h2, h1 {
+    font-size: 30px;
+    margin: 0;
+}
+span, div {
+    word-break:break-all;
+    outline: none;
+}
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+    *font-size: .8em;
+    *position: relative;
+    *top: -4px;
+}
+
+.ie8 sub {
+    vertical-align: bottom;
+}
+
+del {
+    color: #989898;
+}
+
+div {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    color: #484848;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+a span {
+    cursor: pointer;
+}
+
+img {
+    border: none;
+}
+
+ul {
+    list-style: none outside none;
+}
+
+li {
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+em {
+    font-style: normal;
+}
+
+button, input, select, textarea {
+    color: #484848;
+    font-family: tahoma,arial;
+    font-size: 1em;
+    margin: 0;
+    resize: none;
+}
+
+.clear {
+    clear:both;
+    font-size:0;
+    line-height:0;
+    overflow:hidden;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.inblock {
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    text-indent: -20000px;
+    * text-indent: 0px;
+    *line-height: 0px;
+    vertical-align: middle;
+    width: 0;
+}
+
+/*图片自适应*/
+.img-frame {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+/*文字自适应*/
+.one-row {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+.text-omit {
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /*display: inline-block;*/
+}
+/*按钮*/
+.btn {
+    display:inline-block;
+    margin:0 10px;
+    width:60px;
+    height:26px;
+    line-height:26px;
+    text-align:center;
+    font-size:13px;
+    color:#fff;
+    cursor:pointer;
+    overflow:hidden;
+    outline:none;
+    border:none;
+    vertical-align:middle;
+    background:#a02618;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.8);
+    -webkit-text-shadow:1px 1px 1px rgba(0,0,0,0.8);
+    -moz-text-shadow:1px 1px 1px rgba(0,0,0,0.8);
+    -ms-text-shadow:1px 1px 1px rgba(0,0,0,0.8);
+    border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    /*IE7*/
+    *display:inline;
+    *zoom:1;
+}
+.btn:hover {
+    color:#ffffff;
+}
+/*蒙板*/
+.mask {
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:999;
+    background:rgba(0, 0, 0, 0.5);
+    _position:absolute;
+}
+
+
+
+
+/*文物典藏 */
+.collection-items{
+    padding:24px 0 24px 35px;
+    overflow:hidden;
+}
+.collection-items .item{
+    float:left;
+    margin:-15px 0 20px 25px;
+   
+    height:310px;
+    border:4px solid #000;
+    position:relative;
+}
+.collection-items .item.current{
+}
+.collection-items .item-title{
+    float:left;
+    display:block;
+    padding:25px 0 25px 24px;
+    width:54px;
+    height:220px;
+    line-height:20px;
+    font-size:18px;
+    color:#000;
+    z-index:99;
+    cursor:pointer;
+}
+.collection-items .arrow{
+    display:inline-block;
+    margin-top:10px;
+    width:22px;
+    height:16px;
+    background:url(../Images/icon-arrow-black.png) no-repeat center center;
+}
+.collection-items .item-content{
+    position: relative;
+    float:left;
+    display:none;
+    margin:37px 20px 0 0px;
+    width:338px;
+    height:200px;
+    line-height:28px;
+    text-indent:2em;
+    font-size:13px;
+    color:#333;
+    overflow:hidden
+}
+.collection-items .item.current .item-content{
+    display:block;
+}
+.collection-items .item-content p{
+    height:140px;
+    overflow:hidden
+}
+.collection-items .item_link {
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    bottom: 0px;
+    text-indent:0;
+}
+.collection-items .item_link a {
+    width: 96px;
+    height: 43px;
+    display: inline-block;
+    background: url(../images/icon-enter.png);
+}
+.collection-items .item_link a:hover {
+    background: url(../images/icon-enter-hover.png);
+}
+.collection-items .item-img{
+    position:absolute;
+    z-index:10;
+}
+.collection-items .item.one .item-img{
+    right:-25px;
+    bottom:-15px;
+}
+.collection-items .item.two .item-img{
+    right:-15px;
+    bottom:-6px;
+}
+.collection-items .item.three .item-img{
+    right:-25px;
+    bottom:-5px;
+}
+.collection-items .item.four .item-img{
+    right:-12px;
+    bottom:-12px;
+}
+.collection-items .item.five .item-img{
+    right:-13px;
+    bottom:-9px;
+}
+.collection-items .item.one{background: url("../images/dc_bj_1.png") no-repeat center center;margin-left:50px;padding-left: 30px;}
+.collection-items .item.two{background: url("../images/dc_bj_2.png") no-repeat center center;padding-left: 30px;
+    }
+.collection-items .item.three{background: url("../images/dc_bj_3.png") no-repeat center center;padding-left: 30px;
+    }
+.collection-items .item.four{background: url("../images/dc_bj_4.png") no-repeat center center;padding-left: 30px;
+    }
+.collection-items .item.five{background: url("../images/dc_bj_5.png") no-repeat center center;padding-left: 30px;
+    margin-right:50px;}
+
+
+/**/
+.item-title img{
+    margin-left:-44px;
+}
+

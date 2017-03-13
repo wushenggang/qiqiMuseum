@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>中国古代漆器研究中心</title>
+    <link rel="stylesheet" href="css/qqdiancang.css">
+
+    <link href="css/diancang1.css" rel="stylesheet" type="text/css" />
+    <link href="css/diancang2.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/bot_nav_2.css">
+    
+    <script src="js/js-image-slider.js"  type="text/javascript"></script>
+    <script src="js/thumbnail-slider.js" type="text/javascript"></script>
+    <style type="text/css">
+		/*文字样式*/
+#header div.daohang ul.lf a li{ font-size:20px; font-family:"黑体";} 
+
+	body{ background:#f3eed2;}
+        .floatLeft {float:left;}
+        h3 {margin-top:0;color:#333;}
+		
+	#jjh_header{width:100%;height:60px;margin:40px auto 0;}
+    div.mob-show{
+        display:none;
+    }
+	@media all and (max-width:1023px){
+        div.first{
+            width:100% !important;
+            height:auto !important;
+            line-height:35px !important;
+        }
+        div.first img{
+            margin:0 auto;
+        }
+        .daohang{
+            width:100% !important;
+        }
+        ul.lf{
+            display:none;
+        }
+        div#section{
+            display:none;
+        }
+        div#jjh_header{
+            display:none;
+        }
+        body{
+            background:rgba(255,211,155,0.3);
+        }
+        div.mob-show{
+            display:block;
+            width:100%;
+        }
+        div.mob-show .exh{
+            width:100%;
+        }
+        div.mob-show img{
+            width:50%;
+        }
+        div.mob-show li{
+            position:relative;
+            border-bottom:2px solid #741a1a;
+        }
+        div.mob-show a{
+            position:absolute;
+            left:60%;
+            top:34%;
+            color:#0f130f;
+            font-family:"黑体";
+            font-size:20px;
+            display:inline-block;
+        }
+
+    }
+        @media screen and (min-width:1024px) and (max-width:1365px) {
+            #jjh_header{ position:absolute;bottom:0px;}
+        }
+        @media screen and (min-width:1367px) {
+            #jjh_header{ position:absolute;bottom:-100px;}
+        }
+
+    </style>
+    <script type="text/javascript">
+        jQuery.noConflict();
+        jQuery(document).ready(function($){
+            $(".guidelist li").hover(
+                    function () {
+                        $(this).attr("class", "mouseon");
+                    },
+                    function () {
+                        $(this).attr("class", "mouseout");
+                    }
+            );
+            $(".ftoollist li").mouseover(function(){
+                $(this).siblings().removeClass("on");
+                $(this).addClass("on");
+                var preNumber=$(this).prevAll().size();
+                $(".fimglist li").removeClass("onpre");
+                $(".fimglist li:nth-child("+preNumber+")").addClass("onpre");
+                var margin = 990;
+                margin = margin *preNumber;
+                margin = margin * -1;
+                $(".fimglist").stop().animate({marginLeft: margin + "px"}, {duration: 500});
+            });
+        });
+    </script>
+</head>
+<body>
+<!--TODO 页头-->
+<div id="header">
+
+    <div class="header_top"><img src="images/top_t1.png" alt=""/></div>
+    <!-- 导航 -->
+    <div class="daohang">
+        <div class="first lf"><img src="images/logo_1.png" alt=""/></div>
+        <ul class="lf">
+
+            <a href="index.html"><li class="lf">首页</li></a>
+            <a href="yjzx-jj.html"><li class="lf">研究中心</li></a>
+            <a href="jjh-jj.html"><li class="lf">基金会</li></a>
+            <a href="zhxx.html"><li class="lf">综合信息</li></a>
+            <a href=""><li class="lf active">漆器典藏</li></a>
+            <a href="qqzl-xdwx.html"><li class="lf">漆器资料</li></a>
+            <a href="http://www.museum24h.com/360/gushanguan/qiqiguan/"><li class="lf">虚拟展厅</li></a>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--TODO 中间部分-->
+<div id="section">
+        <!-----about----->
+        <div class="about">
+            <div class="abb_list" style=" width:1200px;">
+                <div class="floatLeft">
+                    <div id="sliderFrame">
+                        <div id="slider">
+                            <a href="qqdc-csjz.html"><img src="images/qqdc_lb_bt1.png" alt=""/></a>
+                            <a href="qqdc-slhz.html"><img src="images/qqdc_lb_bt2.png" alt=""/></a>
+                            <a href="qqdc-zbgq.html"><img src="images/qqdc_lb_bt3.png" alt=""/></a>
+                            <a href="qqdc_zbjc.html"><img src="images/qqdc_lb_bt4.png" alt=""/></a>
+                            <a href="qqdc-zjsc.html"><img src="images/qqdc_lb_bt5.png" alt=""/></a>
+                     </div>
+                    </div>
+                </div>
+                <div class="floatLeft">
+                    <div id="mcts1">
+                        <img src="images/qqdc_lb_st1.png"/>
+                        <img src="images/qqdc_lb_st2.png"/>
+                        <img  src="images/qqdc_lb_st3.png"/>
+                        <img  src="images/qqdc_lb_st4.png"/>
+                        <img  src="images/qqdc_lb_st5.png" />
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+</div>
+<div style="clear:both;"></div>
+
+<!--下部分导航-->
+<div id="jjh_header">
+        <img class="lf" src="images/bot_t1.png" alt=""/>
+        <ul class="lf">
+                <li><a href="qqdc_zbjc.html">浙博旧藏</a> </li>
+                <li><a href="qqdc-csjz.html">曹氏捐赠</a></li>
+                <li><a href="qqdc-slhz.html">十里红妆</a></li>
+                <li><a href="qqdc-zbgq.html">浙博古琴</a></li>
+                 <li><a href="qqdc-zjsc.html">最近收藏</a></li>
+
+        </ul>
+    </div>
+ 
+<br>
+<div class="mob-show">
+    <ul class="exh">
+        <li>
+            <img src="images/qqdc_lb_st1.png" alt="">
+            <a href="qqdc_zbjc.html">浙博旧藏</a>
+        </li>
+        <li>
+            <img src="images/qqdc_lb_st2.png" alt="">
+            <a href="qqdc-csjz.html">曹式捐赠</a>
+        </li>
+        <li>
+            <img src="images/qqdc_lb_st3.png" alt="">
+            <a href="qqdc-slhz.html">十里红妆</a>
+        </li>
+        <li>
+            <img src="images/qqdc_lb_st4.png" alt="">
+            <a href="qqdc-zbgq.html">浙博古琴</a>
+        <li>
+            <img src="images/qqdc_lb_st5.png" alt="">
+            <a href="qqdc-zjsc.html">最近收藏</a>
+        </li>
+    </ul>
+</div>
+
+<script src="js/up_down.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</body>
+</html>

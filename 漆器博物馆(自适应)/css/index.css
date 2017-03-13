@@ -1,0 +1,203 @@
+
+
+
+/*ҳͷ*/
+body{background:url("../images/bjbj_2.png");}
+#header{
+    width:100%;height:auto;
+    background-color:#f3efd1;
+    border-bottom:7px solid #641C1A;
+}
+#header .header_top img{
+    display: block;
+    width:100%;
+    height:25px;
+}
+
+#header div.daohang{
+    margin:0 auto;
+    width:1200px;
+    height:100px;
+}
+#header div.daohang div.first{
+    width:222px;height:100px;line-height:100px;background:#631d19;font-size:22px;color:#fff;text-align: center;
+}
+#header div.daohang div.mobile-banner{
+    display:none;
+}
+#header div.daohang ul{
+    width:978px;
+    height:100px;
+}
+#header div.daohang ul li{
+    width:138px;
+    height:100px;line-height: 100px;
+    text-align: center;
+    border-right:1px solid #9d9a9b; font-size:20px;
+}
+#header div.daohang ul a li{ text-decoration: none;color:#0f130f;font-size:20px; font-family:"����";}
+#header div.daohang ul a li.active{background:url("../images/nav_b1.png");}
+#header div.daohang ul li:hover{
+    color:#641c1a;
+    background:url("../images/nav_b1.png");
+}
+
+
+/*   TODO ����       */
+#neirong{
+    width:100%;
+    height:auto;
+    margin-top:11px;
+}
+#neirong div#container{height:349px;width:1200px;margin:0 auto;}
+#container ul.pages.horizontal{
+    left:95%;
+    bottom:15px;
+}
+/*todo �����*/
+#jjh{
+    width:1200px;
+    margin:0 auto;
+}
+#jjh div.jjh_top{
+    height:100px;
+}
+#jjh div.jjh_top div.jjh_top_left{
+    float:left;
+    width:879px;
+}
+#jjh div.jjh_top div.jjh_top_left img.chuan{margin-top:26px;}
+#jjh div.jjh_top div.jjh_top_right img{margin:25px 0 33px 15px;}
+
+#jjh div.jjh_sec{
+   width:1200px;
+    height:404px;
+}
+#jjh div.jjh_sec_left{
+    width:731px;
+    height:404px;
+    display: inline-block;
+	float:left;
+	
+	
+}
+#jjh div.jjh_sec_left p{ margin-top:-3px; color:#6c0101; font-size:26px; line-height:65px; text-align:center;
+ font-family:"����";
+	-webkit-box-shadow: 2px 2px 2px #b9b9b1;  
+  -moz-box-shadow: 2px 2px 2px #b9b9b1;  
+  box-shadow: 2px 2px 2px #b9b9b1; 
+    
+    width:728px;
+    height:63px;
+    background:#fff;
+	
+}
+.jjh_sec_mid img{-webkit-box-shadow: 2px 2px 2px #b9b9b1;  
+  -moz-box-shadow: 2px 2px 2px #b9b9b1;  
+  box-shadow: 2px 2px 2px #b9b9b1; }
+#jjh div.jjh_sec_mid{
+	
+    padding:0 15px;
+    height:404px;
+    display:inline-block;
+	float:left;
+
+}
+#jjh div.jjh_sec_right{
+    width:305px;display:inline-block;float:left;position:relative;
+
+}
+#jjh div.jjh_sec_right p.show1{opacity:0;position:absolute;bottom:3px;width:307px;height:50px;text-align:right;color:#fff;background:rgba(0,0,0,0.7); font-family:"΢���ź�";}
+#jjh div.jjh_sec_right p.show1 span{ line-height:50px; display:block; float:left; margin-left:190px;}
+#jjh div.jjh_sec_right p.show1 img{ padding:8px; float:right; display:block;}
+
+#jjh div.jjh_sec_right p.show2{opacity:0;position:absolute;right:-1px;top:153px;z-index: 999;width:307px;height:50px;text-align:right;color:#fff;background:rgba(0,0,0,0.7);}
+
+
+
+#jjh .jjh_sec_right img.first{margin-bottom:8px;width:305px;}
+
+/*TODO �ۺ���Ϣ*/
+#message{
+    width:1200px;
+    height:390px;
+    margin:0 auto;
+}
+#message .MSS{
+    width:454px;
+    overflow: hidden;
+    display:inline-block;
+}
+#message .MSS img,#message .YJZX img{
+    margin:44px 0 33px;
+}
+#message .MSS a,#message .YJZX a{
+    height:40px;
+    line-height: 40px;
+    color:#783E3B;
+    float:right;
+    display:inline-block;
+    margin:44px 0 33px;
+    text-decoration:none;
+}
+
+#message ul.news{
+    width:454px;
+}
+#message ul.news a{text-decoration:none;color:#2F2E2D;}
+#message ul li{
+    padding:11px 0;
+}
+#message ul li>span{
+    float:right;
+}
+/*TODO �о�����*/
+#message .YJZX{
+    width: 716px;overflow: hidden;float:right;display: inline-block;
+    
+}
+
+
+/*TODO �������*/
+#dianC{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+}
+
+
+
+/*TODO ҳβ*/
+#foot{
+    width:100%;
+    height:170px;
+    margin:30px auto 0;
+    background:#631d19;
+
+}
+#foot p{ width:900px; margin:auto;
+    float:left;
+    text-align:center;
+    height:91px;
+    color:#fff;
+    padding:45px 0 0 250px; line-height:20px; font-size:14px;
+
+}
+#foot img{
+    padding-top:67px;
+    width:60px;
+}
+#foot img.last{
+    margin-left:16px;
+    margin-right:9px;
+}
+
+
+
+
+
+
+
+
+
+
